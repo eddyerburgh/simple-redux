@@ -23,7 +23,7 @@ Simple Redux is intended to teach you the core concepts of Redux. Partly for fun
 
 This is for developers with experience using Redux with React.
 
-You won't learn you how to use actions, reducers, or the `connect` function. Instead you'll learn you how they work under the hood.
+You won't learn how to use actions, reducers, or the `connect` function. Instead you'll learn how they work under the hood.
 
 ## What's included?
 
@@ -483,7 +483,7 @@ export default function connectHOC(mapStateToProps) {
 
 With the naive implementation the wrapped component (and all its child components) will re-render each time `dispatch` is called. Not good.
 
-The solution is to stop the wrapped component re-rendering check if the props object created by `mapStateToProps` haven't changed since the last render.
+The solution is to stop the wrapped component from re-rendering if the props object created by `mapStateToProps` hasn't changed since the last render.
 
 Redux can't use a strict equality (`===`) check to make sure the new props are the same as the previous props, because `mapStateToProps` returns a new object (with a new object value) each time it's called.
 
