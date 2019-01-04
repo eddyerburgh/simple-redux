@@ -19,7 +19,7 @@
 
 Redux is great for managing state, but if you don't understand how Redux works it's easy to make mistakes that lead to inefficient apps.
 
-This rewrite is intended to teach you the core concepts of Redux, so that you have a better understanding of Redux and can avoid unnecessary re-renders in your Redux app.
+This rewrite is intended to teach you the core concepts of Redux, to help you avoid unnecessary re-renders in your Redux app.
 
 ## Who's this for?
 
@@ -33,7 +33,9 @@ Simple Redux implements code from the `redux` and `react-redux` packages. This i
 
 The file and function names are purposefully close to the original source code. If you decide to read the Redux code after reading through this example, you'll be in familiar territory.
 
-The first code to look at is the code used to create a store.
+This README is a walk-through that talks through the code. If you want, you can dive straight into the source code in the `redux` and `react-redux` directories.
+
+The first code to look at in this walk-through is the code used to create a store.
 
 ## The store
 

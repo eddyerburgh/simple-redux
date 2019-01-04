@@ -4,9 +4,9 @@ import reducers from './reducers'
 test('returns same object if unrelated dispatch is fired', () => {
   const store = createStore(reducers)
   const initialState = store.getState()
-  expect(initialState).toEqual({ 
-    "modal": {"visible": false},
-    todos: { items: [] } 
+  expect(initialState).toEqual({
+    modal: { visible: false },
+    todos: { items: [] }
   })
   store.dispatch({ type: 'BLANK' })
   expect(store.getState()).toBe(initialState)
