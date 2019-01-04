@@ -166,7 +166,7 @@ That's all there is to the store—it's surprisingly simple! But you probably us
 
 ## combineReducers
 
-Instead of using a single root reducer, most apps use multiple reducers using the `combineReducers` helper function:
+Instead of using a single root reducer, most apps use multiple reducers by using the `combineReducers` helper function:
 
 ```js
 // app/store/reducers.js
@@ -222,10 +222,10 @@ You do this by creating container components with the `connect` function:
 ```js
 import { connect } from 'react-redux'
 
-const ModalContainer = connect(mapStatToProps)(Modal)
+const ModalContainer = connect(mapStateToProps)(Modal)
 ```
 
-In order for a container to work you also need to render a `<Provider />` component somewhere in the component tree above the container.
+In order for a container to work you need to render a `<Provider />` component somewhere in the component tree above the container.
 
 A `<Provider />` component provides the store, which it receives as a prop:
 
