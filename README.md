@@ -5,8 +5,8 @@
 ## Table of contents
 
 - [Why](#why)
-- [Who's this for?](#whos-this-for?)
-- [What's included?](#whats-included?)
+- [Who's this for?](#whos-this-for)
+- [What's included?](#whats-included)
 - [The store](#the-store)
 - [combineReducers](#combineReducers)
 - [Connecting a store to React](#connecting-a-store-to-react)
