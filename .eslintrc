@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "extends": [
+    "standard",
+    "standard-react",
+    "prettier",
+    "prettier/standard"
+  ],
+  "rules": {
+    "react/prop-types": 0
+  },
+  "overrides": [
+    {
+      "files": [ "*.spec.js" ],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
+}
