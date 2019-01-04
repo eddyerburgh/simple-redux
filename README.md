@@ -5,15 +5,15 @@
 ## Table of contents
 
 - [Why](#why)
-- [Who's this for?](#who's-this-for?)
-- [What's included?](#what's-included?)
+- [Who's this for?](#whos-this-for?)
+- [What's included?](#whats-included?)
 - [The store](#the-store)
 - [combineReducers](#combineReducers)
 - [Connecting a store to React](#connecting-a-store-to-react)
-- [JavaScript values](#javaScript-values)
 - [Memoization](#memoization)
+- [JavaScript values](#javaScript-values)
 - [Optimizing the Connect component](#optimizing-the-connect-component)
-- [Optimizing containers](#optimizing-containers)
+- [Optimizing your containers](#optimizing-your-containers)
 
 ## Why
 
