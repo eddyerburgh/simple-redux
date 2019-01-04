@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel app/index.html",
-    "lint": "eslint '{,!(node_modules|dist)/**/}*.{js,jsx}'",
-    "format": "prettier --no-semi --single-quote --write '{,!(node_modules|dist)/**/}*.{js,json,jsx,md}'",
+    "lint": "eslint '{,!(node_modules|dist|.cache)/**/}*.{js,jsx}'",
+    "format": "prettier --no-semi --single-quote --write '{,!(node_modules|dist|.cache)/**/}*.{js,json,jsx,md}'",
     "test": "jest"
   },
   "devDependencies": {
