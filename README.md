@@ -17,9 +17,7 @@
 
 ## Why
 
-Redux is great for managing state, but if you don't understand how Redux works it's easy to make mistakes that lead to inefficient apps.
-
-This rewrite is intended to teach you the core concepts of Redux, to help you avoid unnecessary re-renders in your Redux app.
+Simple Redux is intended to teach you the core concepts of Redux. Partly for fun, but mainly to help you avoid unnecessary re-renders in your Redux applications.
 
 ## Who's this for?
 
@@ -29,13 +27,13 @@ You won't learn you how to use actions, reducers, or the `connect` function. Ins
 
 ## What's included?
 
-Simple Redux implements code from the `redux` and `react-redux` packages. This includes `createStore`, `combineReducers`, `connect`, and `Provider`.
+Simple Redux implements code from the `redux` and `react-redux` packages. This includes `createStore`, `combineReducers`, `connect`, and the `Provider` component.
 
 The file and function names are purposefully close to the original source code. If you decide to read the Redux code after reading through this example, you'll be in familiar territory.
 
-This README is a walk-through that talks through the code. If you want, you can dive straight into the source code in the `redux` and `react-redux` directories.
+This README is a walk-through of the Simple Redux code. If you're a maverick that doesn't care for structure, you can dive straight into the source code in the `redux` and `react-redux` directories.
 
-The first code to look at in this walk-through is the code used to create a store.
+The first code to look at in the walk-through is the code that creates a store.
 
 ## The store
 
