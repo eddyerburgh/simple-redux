@@ -17,13 +17,13 @@
 
 ## Why
 
-Simple Redux is intended to teach you the core concepts of Redux. Partly for fun, but mainly to help you avoid unnecessary re-renders in your Redux applications.
+Simple Redux is intended to teach you the core concepts of Redux.
 
 ## Who's this for?
 
 This is for developers with experience using Redux with React.
 
-You won't learn how to use actions, reducers, or the `connect` function. Instead you'll learn how they work under the hood.
+You won't learn how to use actions, reducers, or the `connect` function. Instead, you'll learn how they work under the hood.
 
 ## What's included?
 
@@ -271,7 +271,7 @@ export default class Provider extends Component {
 
 _Note: Read the [React docs](https://reactjs.org/docs/context.html) if you aren't familiar with the context API_
 
-A child component can access the `<Provider />` components state, which includes the `storeState` value, by rendering a `Context.Consumer`:
+A child component can access the `<Provider />` component's state, which includes the `storeState` value, by rendering a `Context.Consumer`:
 
 ```js
 const ModalStatus = () => (
@@ -422,9 +422,11 @@ Most memoization implementations use equality checks to ensure arguments haven't
 
 ## JavaScript values
 
-JavaScript has six primitive types: `String`, `Number`, `Boolean`, `Undefined`, `Symbol`, and `Null`.
+As of 2020, there are seven primitive JavaScript types: Undefined, Null, Boolean, Number, BigInt, Symbol, and String.
 
-When you compare a primitive type using the strict equality operator (`===`), JavaScript compares the values. Two different strings with the same value are said to equal each other:
+When you compare two values using the strict equality operator (`===`), the JS engine produces either true or false. The way the JS engine determines equality depends on the type of the values being compared. 
+
+Two different strings are said to equal each other if they have the exact same sequence of code units:
 
 ```js
 const str = 'some string'
@@ -433,22 +435,33 @@ str === 'some string' // true
 str === 'different string' // false
 ```
 
-The other data type in JavaScript is `Object`. Everything that isn't a primitive value in JavaScript is an object (this includes functions and arrays).
+Two numbers are said to equal each other if they contain the same number value:
 
-Each object has a unique _object value_ that is separate from the shape of the object:
+```js
+const num = 1
+num === num // 1
+num === 1 // true
+num === 2 // false
+```
+
+The other data type in JavaScript is Object. Everything that isn't a primitive type in JavaScript has type Object, including functions (callable objects) and arrays.
+
+An Object has a unique _object value_ that is separate from its shape:
 
 ```js
 const obj1 = { prop1: true } // has unique object value
 const obj2 = { prop1: true } // has unique object value
 ```
 
-When you compare an object using the strict equality operator (`===`), JavaScript compares the object value of the two object, rather than the shape:
+When you compare two Object types using the strict equality operator (`===`), the JS engine compares the object values, rather than the shapes:
 
 ```js
 obj1 === obj1 // true
 obj2 === obj2 // true
 obj1 === obj2 // false
 ```
+
+_Note: Symbols work in a similar way to Objects during equality checks._
 
 Now that you understand memoization and JavaScript values, you can see how redux uses it to avoid unnecessary re-renders.
 
